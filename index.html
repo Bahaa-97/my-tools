@@ -7,9 +7,13 @@
     <title>أدواتي | My Tools</title>
     <meta name="description" content="مجموعة من الأدوات اليومية المفيدة في مكان واحد، تعمل بالكامل على متصفحك. A collection of useful daily tools.">
     <meta property="og:title" content="أدواتي | My Tools">
-    <meta property="og:description" content="مجموعة من الأدوات اليومية المفيدة.">
+    <meta property="og:description" content="مجموعة من الأدوات اليومية المفيدة في مكان واحد، تعمل بالكامل على متصفحك.">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://example.com/">
+    <meta property="og:url" content="https://my-tools.online/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="أدواتي | My Tools">
+    <meta name="twitter:description" content="مجموعة من الأدوات اليومية المفيدة في مكان واحد، تعمل بالكامل على متصفحك.">
+    <link rel="canonical" href="https://my-tools.online/">
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -56,7 +60,14 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "أدواتي | My Tools",
-      "url": "https://example.com/"
+      "url": "https://my-tools.online/",
+      "description": "مجموعة من الأدوات اليومية المفيدة في مكان واحد، تعمل بالكامل على متصفحك.",
+      "inLanguage": ["ar", "en"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://my-tools.online/#/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
 </head>
