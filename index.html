@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أدواتي | My Tools</title>
+    <meta name="description" content="مجموعة من الأدوات اليومية المفيدة في مكان واحد، تعمل بالكامل على متصفحك. A collection of useful daily tools.">
+    <meta property="og:title" content="أدواتي | My Tools">
+    <meta property="og:description" content="مجموعة من الأدوات اليومية المفيدة.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://example.com/">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Anti-Flash Script for Theme and Language (Executes immediately) -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+                const savedLang = localStorage.getItem('lang') || 'ar';
+                document.documentElement.setAttribute('lang', savedLang);
+                document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            } catch(e) {}
+        })();
+    </script>
+    
+    <!-- SEO: JSON-LD Structured Data (Updated Dynamically) -->
+    <script id="json-ld" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "أدواتي | My Tools",
+      "url": "https://example.com/"
+    }
+    </script>
+</head>
+<body>
+    <canvas id="smart-bg" class="smart-bg"></canvas>
+    <header class="app-header">
+        <div class="header-container">
+            <a href="#/" class="logo" id="logo-text">أدواتي<span class="dot">.</span></a>
+            <div class="header-controls">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="lang-toggle" aria-label="Toggle Language">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="app-content" class="container fade-in">
+        <!-- Content injected dynamically by JS -->
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo" id="footer-logo-text">أدواتي<span class="dot">.</span></div>
+                <p id="footer-slogan">مجموعة من الأدوات اليومية المفيدة في مكان واحد.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#/about" id="link-about">عن الموقع</a>
+                <a href="#/privacy" id="link-privacy">سياسة الخصوصية</a>
+                <a href="#/terms" id="link-terms">شروط الاستخدام</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footer-credit">تم التصميم بواسطة <span class="heart">❤</span> بهاء الدين &copy; 2026</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Core Scripts -->
+    <script src="registry.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bg.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(err => {
+                    console.log('SW Registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
