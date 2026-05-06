@@ -49,8 +49,23 @@ class App {
             this.handleRoute(); // Re-render content with new lang
         });
         
-        // Routing via Hash
-        window.addEventListener('hashchange', () => this.handleRoute());
+        // Routing via History API (pushState)
+        window.addEventListener('popstate', () => this.handleRoute());
+
+        // Intercept all internal link clicks for SPA navigation (no page reload)
+        document.addEventListener('click', (e) => {
+            const a = e.target.closest('a');
+            if (!a) return;
+            const href = a.getAttribute('href');
+            if (!href || href.startsWith('http') || href.startsWith('//') || href.startsWith('mailto:') || a.hasAttribute('download')) return;
+            e.preventDefault();
+            this.navigate(href);
+        });
+    }
+
+    navigate(path) {
+        history.pushState(null, '', path);
+        this.handleRoute();
     }
     
     updateUIStrings() {
@@ -99,31 +114,28 @@ class App {
     }
     
     handleRoute() {
-        const hash = window.location.hash || '#/';
+        const path = window.location.pathname;
         const content = document.getElementById('app-content');
         
-        // Scroll to top automatically when navigating to a new page
         window.scrollTo({ top: 0, behavior: 'instant' });
         
-        // Restart fade-in animation
         content.classList.remove('fade-in');
-        void content.offsetWidth; // Trigger reflow
+        void content.offsetWidth;
         content.classList.add('fade-in');
 
-        // Cleanup previous tool memory/events if any
         if (this.currentTool && this.loadedTools[this.currentTool] && this.loadedTools[this.currentTool].cleanup) {
             this.loadedTools[this.currentTool].cleanup();
         }
         this.currentTool = null;
 
-        if (hash === '#/' || hash === '') {
+        if (path === '/' || path === '') {
             this.renderHome(content);
-            this.updateSEO(this.strings['app_name'][this.lang], this.strings['app_desc'][this.lang], window.location.href.split('#')[0]);
-        } else if (hash.startsWith('#/tools/')) {
-            const toolId = hash.split('#/tools/')[1];
+            this.updateSEO(this.strings['app_name'][this.lang], this.strings['app_desc'][this.lang], 'https://my-tools.online/');
+        } else if (path.startsWith('/tools/')) {
+            const toolId = path.replace('/tools/', '');
             this.loadAndRenderTool(toolId, content);
-        } else if (hash === '#/about' || hash === '#/privacy' || hash === '#/terms') {
-            this.renderStaticPage(hash.replace('#/', ''), content);
+        } else if (path === '/about' || path === '/privacy' || path === '/terms') {
+            this.renderStaticPage(path.slice(1), content);
         } else {
             content.innerHTML = `<h2 style="text-align:center; padding: 4rem;">404 - ${this.strings['not_found'][this.lang]}</h2>`;
         }
@@ -262,7 +274,7 @@ class App {
 
         container.innerHTML = `
             <div class="tool-view-header">
-                <a href="#/" class="back-btn">
+                <a href="/" class="back-btn">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                     ${this.strings['back'][this.lang]}
                 </a>
@@ -322,7 +334,7 @@ class App {
             const colorRgb = colors[index % colors.length];
             
             html += `
-                <a href="#/tools/${tool.id}" class="tool-card" data-cat="${tool.category}" style="--c-rgb: ${colorRgb};">
+                <a href="/tools/${tool.id}" class="tool-card" data-cat="${tool.category}" style="--c-rgb: ${colorRgb};">
                     <div class="tool-card-icon">${tool.icon || '🛠'}</div>
                     <div class="tool-card-title">${title}</div>
                     <div class="tool-card-desc">${desc}</div>
@@ -544,8 +556,7 @@ class App {
                             const rtDesc = t.desc ? t.desc[this.lang] : '';
                             const colors = ['59, 130, 246', '245, 158, 11', '139, 92, 246'];
                             return `
-                                <a href="#/tools/${t.id}" class="tool-card" style="--c-rgb: ${colors[idx % colors.length]};">
-                                    <div class="tool-card-icon">${t.icon || '🛠'}</div>
+                                <a href="/tools/${t.id}" class="tool-card" style="--c-rgb: ${colors[idx % colors.length]};">                                    <div class="tool-card-icon">${t.icon || '🛠'}</div>
                                     <div class="tool-card-title">${rtTitle}</div>
                                     <div class="tool-card-desc">${rtDesc}</div>
                                 </a>

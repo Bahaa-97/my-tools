@@ -36,6 +36,20 @@
         gtag('config', 'G-G39FPX3J18');
     </script>
     
+    <!-- GitHub Pages SPA: Decode redirected URL back to clean path -->
+    <script>
+        (function(l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function(s) {
+                    return s.replace(/~and~/g, '&');
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location));
+    </script>
+
     <!-- Anti-Flash Script for Theme and Language (Executes immediately) -->
     <script>
         (function() {
@@ -75,7 +89,7 @@
     <canvas id="smart-bg" class="smart-bg"></canvas>
     <header class="app-header">
         <div class="header-container">
-            <a href="#/" class="logo" id="logo-text">أدواتي<span class="dot">.</span></a>
+            <a href="/" class="logo" id="logo-text">أدواتي<span class="dot">.</span></a>
             <div class="header-controls">
                 <button id="theme-toggle" aria-label="Toggle Theme">
                     <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
@@ -97,9 +111,9 @@
                 <p id="footer-slogan">مجموعة من الأدوات اليومية المفيدة في مكان واحد.</p>
             </div>
             <div class="footer-links">
-                <a href="#/about" id="link-about">عن الموقع</a>
-                <a href="#/privacy" id="link-privacy">سياسة الخصوصية</a>
-                <a href="#/terms" id="link-terms">شروط الاستخدام</a>
+                <a href="/about" id="link-about">عن الموقع</a>
+                <a href="/privacy" id="link-privacy">سياسة الخصوصية</a>
+                <a href="/terms" id="link-terms">شروط الاستخدام</a>
             </div>
         </div>
         <div class="footer-bottom">

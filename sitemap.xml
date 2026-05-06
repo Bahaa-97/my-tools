@@ -1,103 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- الصفحة الرئيسية -->
-  <url>
-    <loc>https://my-tools.online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://my-tools.online/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
 
   <!-- PDF Tools -->
-  <url><loc>https://my-tools.online/#/tools/pdf-merger</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/image-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-splitter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-to-image</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-viewer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-compress</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-text-extract</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-watermark</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-sign</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-protect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-to-word</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/word-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-metadata</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-rotate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-remove-pages</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-page-numbers</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/pdf-unlock</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-merger</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/image-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-splitter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-to-image</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-viewer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-compress</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-text-extract</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-watermark</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-sign</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-protect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-to-word</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/word-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-metadata</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-rotate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-remove-pages</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-page-numbers</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/pdf-unlock</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Health & Fitness -->
-  <url><loc>https://my-tools.online/#/tools/health-bmi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-calories</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-water</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-bodyfat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-ideal-weight</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-macros</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-1rm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-pregnancy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/health-heartrate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-bmi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-calories</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-water</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-bodyfat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-ideal-weight</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-macros</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-1rm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-pregnancy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/health-heartrate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Personal Finance -->
-  <url><loc>https://my-tools.online/#/tools/finance-budget</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-tax</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-savings</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-crypto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-compare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-loan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-discount</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-salary</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/finance-inflation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-budget</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-tax</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-savings</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-crypto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-compare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-loan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-discount</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-salary</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/finance-inflation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Productivity -->
-  <url><loc>https://my-tools.online/#/tools/prod-todo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-notes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-password</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-links</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-pomodoro</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-habit</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-sounds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/prod-whiteboard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-todo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-notes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-password</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-links</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-pomodoro</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-habit</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-sounds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/prod-whiteboard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Time & Date -->
-  <url><loc>https://my-tools.online/#/tools/time-timer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-zones</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-diff</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-hijri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-events</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-age</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-add</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-workdays</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/time-world</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-timer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-zones</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-diff</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-hijri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-events</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-age</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-add</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-workdays</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/time-world</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Developer Tools -->
-  <url><loc>https://my-tools.online/#/tools/dev-formatter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-encoder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-uuid</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-regex</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-colors</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-jwt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-url</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-css</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/dev-lorem</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-formatter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-encoder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-uuid</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-regex</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-colors</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-jwt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-url</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-css</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/dev-lorem</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Media & Images -->
-  <url><loc>https://my-tools.online/#/tools/media-compress</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/media-convert</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/media-resize</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/media-video-frame</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/media-color</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/media-compress</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/media-convert</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/media-resize</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/media-video-frame</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/media-color</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Text Tools -->
-  <url><loc>https://my-tools.online/#/tools/text-counter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/text-case</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/text-spaces</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/text-replace</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://my-tools.online/#/tools/text-reverse</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/text-counter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/text-case</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/text-spaces</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/text-replace</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://my-tools.online/tools/text-reverse</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Static Pages -->
-  <url><loc>https://my-tools.online/#/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://my-tools.online/#/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://my-tools.online/#/terms</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://my-tools.online/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://my-tools.online/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://my-tools.online/terms</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 
 </urlset>
