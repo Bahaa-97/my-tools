@@ -5,6 +5,7 @@ class App {
         this.registry = window.TOOLS_REGISTRY || [];
         this.categories = window.CATEGORIES || {};
         this.strings = window.GLOBAL_STRINGS || {};
+        this.isLocal = window.location.protocol === 'file:';
         
         // This is where tools register themselves once loaded
         window.ToolApp = {
@@ -49,8 +50,9 @@ class App {
             this.handleRoute(); // Re-render content with new lang
         });
         
-        // Routing via History API (pushState)
+        // Routing via History API (pushState) or hash (local file://)
         window.addEventListener('popstate', () => this.handleRoute());
+        window.addEventListener('hashchange', () => this.handleRoute());
 
         // Intercept all internal link clicks for SPA navigation (no page reload)
         document.addEventListener('click', (e) => {
@@ -64,8 +66,12 @@ class App {
     }
 
     navigate(path) {
-        history.pushState(null, '', path);
-        this.handleRoute();
+        if (this.isLocal) {
+            window.location.hash = '#' + path;
+        } else {
+            history.pushState(null, '', path);
+            this.handleRoute();
+        }
     }
     
     updateUIStrings() {
@@ -114,7 +120,9 @@ class App {
     }
     
     handleRoute() {
-        const path = window.location.pathname;
+        const path = this.isLocal
+            ? (window.location.hash.replace(/^#/, '') || '/')
+            : window.location.pathname;
         const content = document.getElementById('app-content');
         
         window.scrollTo({ top: 0, behavior: 'instant' });
@@ -128,7 +136,7 @@ class App {
         }
         this.currentTool = null;
 
-        if (path === '/' || path === '') {
+        if (path === '/' || path === '' || path.endsWith('/index.html') || path.endsWith('\\index.html')) {
             this.renderHome(content);
             this.updateSEO(this.strings['app_name'][this.lang], this.strings['app_desc'][this.lang], 'https://my-tools.online/');
         } else if (path.startsWith('/tools/')) {
@@ -531,8 +539,18 @@ class App {
         const container = document.getElementById('app-content');
         
         const title = toolEntry.title ? toolEntry.title[this.lang] : toolId;
-        const desc = (config.meta_desc && config.meta_desc[this.lang]) ? config.meta_desc[this.lang] : (toolEntry.desc ? toolEntry.desc[this.lang] : '');
-        const keywords = (config.keywords && config.keywords[this.lang]) ? config.keywords[this.lang].join(', ') : '';
+        const seoData = (window.SEO_REGISTRY && window.SEO_REGISTRY[toolId]) ? window.SEO_REGISTRY[toolId] : {};
+        const desc = (config.meta_desc && config.meta_desc[this.lang])
+            ? config.meta_desc[this.lang]
+            : (seoData.desc && seoData.desc[this.lang])
+            ? seoData.desc[this.lang]
+            : (toolEntry.desc ? toolEntry.desc[this.lang] : '');
+        const _kw = (k) => Array.isArray(k) ? k.join(', ') : (k || '');
+        const keywords = (config.keywords && config.keywords[this.lang])
+            ? _kw(config.keywords[this.lang])
+            : (seoData.keywords && seoData.keywords[this.lang])
+            ? _kw(seoData.keywords[this.lang])
+            : '';
         const features = (config.features && config.features[this.lang]) ? config.features[this.lang] : [];
         const appName = this.strings['app_name'][this.lang];
         
@@ -652,7 +670,7 @@ class App {
         // Setup shell
         container.innerHTML = `
             <div class="tool-view-header">
-                <a href="#/" class="back-btn">
+                <a href="/" class="back-btn">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                     ${this.strings['back'][this.lang]}
                 </a>
