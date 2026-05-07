@@ -523,7 +523,8 @@ class App {
             
             // Dynamically inject script
             const script = document.createElement('script');
-            script.src = toolEntry.path;
+            const srcPath = toolEntry.path.startsWith('/') ? toolEntry.path : '/' + toolEntry.path;
+            script.src = srcPath;
             script.onerror = () => {
                 container.innerHTML = `<h2 style="text-align:center; padding: 4rem; color: #ef4444;">${this.strings['load_failed'][this.lang]}</h2>`;
                 this.pendingToolRender = null;
