@@ -1,4 +1,4 @@
-const CACHE_NAME = 'daily-tools-v1';
+const CACHE_NAME = 'daily-tools-v1.1';
 
 // Since we have many tools, we will use a cache-first or network-first strategy.
 // For simplicity, we just listen to fetch and cache as we go (Stale-While-Revalidate).
