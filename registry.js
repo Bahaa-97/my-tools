@@ -96,6 +96,22 @@ window.TOOLS_REGISTRY = [
         icon: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M8 13h8M8 17h8"></path></svg>'
     },
     {
+        id: 'pdf-to-ppt',
+        path: 'tools/pdf-to-ppt.js',
+        category: 'pdf',
+        title: { ar: 'PDF إلى PowerPoint', en: 'PDF to PPT' },
+        desc: { ar: 'تحويل صفحات PDF إلى شرائح عرض باوربوينت.', en: 'Convert PDF pages into PowerPoint slides.' },
+        icon: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><rect x="8" y="13" width="8" height="4"></rect></svg>'
+    },
+    {
+        id: 'ppt-to-pdf',
+        path: 'tools/ppt-to-pdf.js',
+        category: 'pdf',
+        title: { ar: 'PowerPoint إلى PDF', en: 'PPT to PDF' },
+        desc: { ar: 'استخراج نصوص شرائح الباوربوينت وتحويلها لملف PDF.', en: 'Extract text from PPT slides and convert to PDF.' },
+        icon: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><rect x="8" y="11" width="8" height="4"></rect><line x1="12" y1="15" x2="12" y2="19"></line></svg>'
+    },
+    {
         id: 'pdf-metadata',
         path: 'tools/pdf-metadata.js',
         category: 'pdf',
